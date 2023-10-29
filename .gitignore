@@ -1,0 +1,8 @@
+*.swp
+*.env
+.ruby-version
+.DS_Store
+cucumber.sh
+.env*
+.bash_history
+*.vscode

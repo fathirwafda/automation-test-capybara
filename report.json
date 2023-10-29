@@ -1,0 +1,290 @@
+[
+  {
+    "id": "buy-a-product-on-saucedemo.com",
+    "uri": "features/scenarios/web/buy_product.feature",
+    "keyword": "Feature",
+    "name": "Buy a product on SauceDemo.com",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@purchase-product",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "buy-a-product-on-saucedemo.com;buy-a-product",
+        "keyword": "Scenario",
+        "name": "Buy a product",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I visit to SauceDemo website",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6581653000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 19425000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in with valid credentials",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 627142000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 15452000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be logged in",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95346000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 4658000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I sort products by highest price",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 483884000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 9972000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "products should be sorted by highest price",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103468000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 4002000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I click on the first product",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146930000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 4259000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "name": "I proceed to checkout",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102981000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 4762000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "name": "complete the purchase on the checkout",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 330990000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 7862000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the order confirmation",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/buy_product_steps.rb:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420829000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "config/env.rb:58"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 3400000
+                }
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@purchase-product",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.26/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.26/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100976000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
