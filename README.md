@@ -119,30 +119,6 @@ For more details how to install and setup
     bundle exec cucumber -p web-desktop --tag @purchase-product
    ```
 
-## XQuartz Setup
-
-For using `@video` tag, macOS must trigger XQuartz. Basically it can be manually done by creating `/tmp/.X11-unix` folder, change its mode to 777, and change its owner to root. Unfortunately, macOS will clear `/tmp` folder each time the laptop is restarted. Here are some alternatives:
-
-* Manually run these commands after restart
-
-  ```bash
-  mkdir /tmp/.X11-unix
-  sudo chmod 1777 /tmp/.X11-unix
-  sudo chown root /tmp/.X11-unix/
-  ```
-
-* Add XQuartz as Login Items
-
-  1. Open `System Preferences`
-  2. Open `Users & Groups`
-  3. Pick your user at the sidebar (default to current user logged in)
-  4. Open `Login Items` tab
-  5. Click `+` button
-  6. Find XQuartz in `Application/Utilities/XQuartz`
-  7. Click `Add` button
-
-  Cons: it will open XQuartz terminal every time you log in, you may close it after
-
 ## Common Errors
 
 * JSON error when running `bundle`, update your XCode or run `xcode-select --install`
