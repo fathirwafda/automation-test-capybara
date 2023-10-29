@@ -1,0 +1,6 @@
+web-desktop: features/scenarios/web
+         -r features/helper
+         -r screenshots
+         -r config
+         -r features/step_definitions
+         -r features/pages
