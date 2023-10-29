@@ -61,59 +61,36 @@ For more details how to install and setup
   rvm use 3.2.2
   ```
 
-4. Install Dependencies
-
-  * Install [XQuartz](https://www.xquartz.org)
-  * Configure display socket lock file (unfortunately this had to be run every time you restart your laptop, alternatives are listed below)
-
-  ```bash
-  mkdir /tmp/.X11-unix
-  sudo chmod 1777 /tmp/.X11-unix
-  sudo chown root /tmp/.X11-unix/
-  ```
-
-  * Install libav/avconv
-
-  ```bash
-  brew install libav
-  ```
-
-  * Install CMake
-
-  ```bash
-  brew install cmake pkg-config && sudo ln -s /usr/local/bin/make /usr/local/bin/gmake
-  ```
-
-5. Clone the project
+4. Clone the project
 
   ```bash
   git clone git@github.com:fathirwafda/automation-test-capybara.git
   cd automation-test-capybara
   ```
 
-6. Copy .env file
+5. Copy .env file
 
   ```bash
   cp env.sample .env
   ```
 
-7. Install [bundler](http://bundler.io/)
+6. Install [bundler](http://bundler.io/)
 
   ```bash
   gem install bundler
   ```
 
-8. Run bundle install
+7. Run bundle install
 
   ```bash
   bundle install # or `bundle` for simpler command
   ```
-9. Copy env (This .env can be used for store your value to be more flexible)
+8. Copy env (This .env can be used for store your value to be more flexible)
 
   ```bash
   cp env.sample .env
   ```
-10. Go back to task_capybara_cucumber folder and run cucumber to make sure everything is installed
+9. Go back to task_capybara_cucumber folder and run cucumber to make sure everything is installed
 
    ```bash
     bundle exec cucumber -p web-desktop --tag @purchase-product
